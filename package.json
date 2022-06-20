@@ -1,0 +1,38 @@
+{
+    "name": "@pronos-eu/ObjectedMap",
+    "version": "1.0.0",
+    "description": "Package that contains ObjectedMap class",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+      "build": "rimraf lib && tsc",
+      "lint:base": "eslint --ignore-path .eslintignore --ext .js,.ts",
+      "lint": "yarn lint:base .",
+      "lint:fix": "yarn lint:base . --fix",
+      "test": "jest"
+    },
+    "repository": "https://github.com/pronos-eu/ObjectedMap",
+    "publishConfig": {
+      "@pronos-eu:registry": "https://npm.pkg.github.com/pronos-eu"
+    },
+    "license": "MIT",
+    "author": "arqo123",
+    "dependencies": {
+      "@types/node": "^14.0.13",
+      "typescript": "^4.2.0"
+    },
+    "devDependencies": {
+      "@types/jest": "28.1.1",
+      "@typescript-eslint/eslint-plugin": "^5.12.1",
+      "@typescript-eslint/parser": "^5.12.1",
+      "babel-jest": "^24.8.0",
+      "eslint": "^7.1.0",
+      "eslint-config-pronos": "git+https://github.com/pronos-eu/eslint-config-pronos.git#v0.5.8",
+      "eslint-formatter-summary": "1.0.4",
+      "eslint-plugin-import": "^2.17.3",
+      "jest": "^26.1.0",
+      "rimraf": "^3.0.2",
+      "ts-jest": "^26.1.1"
+    } 
+  }
+  
